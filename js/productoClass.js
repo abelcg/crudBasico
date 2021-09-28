@@ -1,0 +1,1 @@
+// este archivo tendra todo lo necesario p trabajar con la clse de productos
