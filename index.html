@@ -50,7 +50,7 @@
         <h1 class="display-4 text-center">Administrador de porductos</h1>
         <hr />
         <article>
-          <form class="my-5 p-3 bg-light">
+          <form class="my-5 p-3 bg-light" id="formProducto">
             <h3>Cargar productos</h3>
             <hr />
             <div class="mb-3">
@@ -61,9 +61,9 @@
                 id="codigo"
                 aria-describedby="codigo"
                 placeholder="Ingresar  un codigo"
-                required
-                onblur="validarCampoRequerido(this)"
-              />
+                />
+                <!-- required -->
+                <!-- onblur="validarCampoRequerido(this)" -->
               <div class="invalid-feedback">Este campo es obligatorio</div>
               <div class="valid-feedback">Este campo es correcto</div>
             </div>
@@ -75,21 +75,23 @@
                 id="producto"
                 aria-describedby="producto"
                 placeholder="mouse logitec"
-                required
-                minlength="3"
-                maxlength="35"
-            
-              />
+                
+                />
+                <!--  required
+                 minlength="3"
+                 maxlength="35" -->
               <div class="invalid-feedback">Este campo es obligatorio</div>
             </div>
             <div class="mb-3">
               <label for="Descripción" class="form-label">Descripción</label>
-              <input
-                type="text"
+              <textarea 
+                type="text-area"
                 class="form-control"
                 id="Descripción"
                 aria-describedby="Descripción"
-              />
+                rows="3"
+                placeholder="Descrpción del producto"
+              ></textarea>
             </div>
             <div class="mb-3">
               <label for="Cantidad" class="form-label">Cantidad</label>
@@ -109,10 +111,14 @@
                 class="form-control"
                 id="URL"
                 aria-describedby="URL"
+                placeholder="https://..."
               />
             </div>
 
             <button type="submit" class="btn btn-primary">Guardar</button>
+            <div class="alert alert-danger mt-4 d-none" role="alert" id="msjAlerta">
+              Debe completare todos los datos
+            </div>
           </form>
         </article>
       </section>
