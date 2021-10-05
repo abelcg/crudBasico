@@ -33,7 +33,10 @@
                 <a class="nav-link" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/admin.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/admin.html"
                   >Admin</a
                 >
               </li>
@@ -129,30 +132,22 @@
         <h2 class="display-2 text-center">Tabla de productos</h2>
         <hr />
         <button class="btn btn-primary" id="btn-agregar">Agregar</button>
-        <table class="table my-4">
-          <thead>
-            <tr>
-              <th scope="col">Cod</th>
-              <th scope="col">Producto</th>
-              <th scope="col">Descripción</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">URL</th>
-              <th scope="col">Acciones</th>
-            </tr>
-          </thead>
-          <tbody id="tablaProductos">
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>
-                <button class="btn btn-warning">Editar</button>
-                <button class="btn btn-danger">Editar</button>
-              </td>
-            </tr>
-          </tbody>
+        <table class="table-responsive">
+          <table class="table my-4">
+            <thead>
+              <tr>
+                <th scope="col">Cod</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">URL</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tablaProductos">
+             
+            </tbody>
+          </table>
         </table>
       </section>
     </main>
